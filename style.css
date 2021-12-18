@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 50% 5%;
+    background-color: black;
+}
+
+.wrapper{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    grid-template-columns: 33% 31% 33%;
+    
+}
+
+h1{
+    color:white;
+    font-family: monospace;
+    text-align: center;
+}
+
+font{
+    opacity: .4;
+    font-size: 60px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 65% 10% 35%;
+    font-family: monospace;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.base{
+    background-color: violet;
+    color: white;
+}
+
+.kick{
+    background-color: rgb(80, 167, 189);
+    color: white;
+}
+
+.clap{
+    background-color: rgb(114, 189, 80);
+    color: white;
+}
+
+.snare{
+    background-color: rgb(189, 80, 89);
+    color: white;
+}
+
+.temp1{
+    background-color: rgb(168, 118, 60);
+    color: white;
+}
+
+.temp2{
+    background-color: rgb(109, 80, 189);
+    color: white;
+}
+
+.play{
+    transform: scale(0.9);
+    border-radius: 100px;
+    box-shadow:inset 0px 0px 0px 5px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        display: grid;
+        place-items: center;
+        grid-template-rows: 35% 40%;
+    }
+    
+    h1{
+        margin-top: -10%;
+        color:white;
+        font-family: monospace;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .wrapper {
+        display: grid;
+        place-items: center;
+        gap: 10px;
+        grid-template-columns: 50% 47%;        
+    }
+}
